@@ -1,0 +1,23 @@
+/*
+    Global config
+*/
+
+// serial setup
+#define SERIAL_BAUD 115200
+
+// wifi setup
+#define WIFISSID "fancywifissid"
+#define PASSWORD  "supersecretpassword"
+
+// mqtt setup
+#define BROKER "broker.home" // ip or hostname
+#define BROKERPORT 1883
+
+// influxdb setup
+String  configInfluxHost  = "influx.myown.server"; // influxdb udp endpoint configured for inlux line protocol
+int     configInfluxPort  = 1234; // influxdb udp port
+
+// bme280 setup
+long    configIntervall   = 1000; // ms between measurements
+int     configMessungen = 30; // n measurements that are averaged and then sent
+
